@@ -8,7 +8,7 @@
 
 import path from 'node:path'
 import { globSync } from 'glob'
-import dynamicIcons from '../src/assets/icons/dynamic-icons'
+import dynamicIcons from '../src/assets/icons/dynamic-icons.js'
 
 /**
  * @usage 生成icons, 用于 unocss safelist，以支持页面动态渲染自定义图标
