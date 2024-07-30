@@ -10,6 +10,8 @@
 import axios from 'axios'
 import { setupInterceptors } from './interceptors'
 
+axios.defaults.withCredentials = true
+
 export function createAxios(options = {}) {
   const defaultOptions = {
     baseURL: import.meta.env.VITE_AXIOS_BASE_URL,
