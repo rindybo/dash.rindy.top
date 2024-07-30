@@ -9,7 +9,7 @@
 import { defineConfig, presetAttributify, presetIcons, presetUno } from 'unocss'
 import presetRemToPx from '@unocss/preset-rem-to-px'
 import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders'
-import { getIcons } from './build'
+import { getIcons } from './build/index.js'
 
 const icons = getIcons()
 export default defineConfig({
