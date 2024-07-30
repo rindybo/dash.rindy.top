@@ -3,7 +3,7 @@
  * @LastEditor: Ronnie Zhang
  * @LastEditTime: 2023/12/13 20:54:36
  * @Email: zclzone@outlook.com
- * Copyright © 2023 Ronnie Zhang(大脸怪) | https://isme.top
+ * Copyright © 2023 Rindy | rindy.top
  **********************************/
 
 export const defaultLayout = 'normal'
@@ -36,7 +36,7 @@ export const basePermissions = [
         code: 'ShowDocs',
         name: '项目文档',
         type: 'MENU',
-        path: 'https://isme.top',
+        path: 'https://docs.rindy.top',
         icon: 'i-me:docs',
         order: 1,
         enable: true,

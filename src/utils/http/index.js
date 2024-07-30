@@ -4,7 +4,7 @@
  * @LastEditor: Ronnie Zhang
  * @LastEditTime: 2023/12/04 22:46:28
  * @Email: zclzone@outlook.com
- * Copyright © 2023 Ronnie Zhang(大脸怪) | https://isme.top
+ * Copyright © 2023 Rindy | rindy.top
  **********************************/
 
 import axios from 'axios'
@@ -26,5 +26,9 @@ export function createAxios(options = {}) {
 export const request = createAxios()
 
 export const mockRequest = createAxios({
-  baseURL: '/mock-api',
+  baseURL: '/',
 })
+
+/**
+ * '/mock-api',
+ */

@@ -3,7 +3,7 @@
  - @LastEditor: Ronnie Zhang
  - @LastEditTime: 2023/12/05 21:28:22
  - @Email: zclzone@outlook.com
- - Copyright © 2023 Ronnie Zhang(大脸怪) | https://isme.top
+ - Copyright © 2023 Rindy | rindy.top
  --------------------------------->
 
 <template>
@@ -31,7 +31,7 @@
         <template #header-extra>
           <a
             class="text-14 text-primary text-highlight hover:underline hover:opacity-80"
-            href="https://isme.top"
+            href="rindy.top"
             target="_blank"
             @click.prevent="message?.info('官网正在火速开发中...')"
           >
@@ -49,7 +49,7 @@
             type="primary"
             ghost
             tag="a"
-            href="https://isme.top"
+            href="rindy.top"
             target="__blank"
           >
             开发文档
@@ -139,7 +139,7 @@
           <p class="text-14 opacity-60">
             👉点击
             <b class="mx-2 transition hover:text-primary">
-              <a href="https://isme.top" target="_blank">更多</a>
+              <a href="rindy.top" target="_blank">更多</a>
             </b>
             查看更多实用功能，持续开发中...
           </p>

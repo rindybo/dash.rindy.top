@@ -7,6 +7,8 @@ export default antfu({
   rules: {
     'n/prefer-global/process': 'off',
     'no-undef': 'error',
+    'no-console': 'off',
+    'no-debugger': 'off',
     'no-fallthrough': 'off',
     'vue/block-order': 'off',
     '@typescript-eslint/no-this-alias': 'off',

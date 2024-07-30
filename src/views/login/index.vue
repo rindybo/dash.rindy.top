@@ -3,7 +3,7 @@
  - @LastEditor: Ronnie Zhang
  - @LastEditTime: 2023/12/05 21:28:36
  - @Email: zclzone@outlook.com
- - Copyright © 2023 Ronnie Zhang(大脸怪) | https://isme.top
+ - Copyright © 2023 Rindy | rindy.top
  --------------------------------->
 
 <template>
@@ -103,7 +103,7 @@
 <script setup>
 import { useStorage } from '@vueuse/core'
 import api from './api'
-import { lStorage, throttle } from '@/utils'
+import { fetchId, lStorage, throttle } from '@/utils'
 import { useAuthStore } from '@/store'
 
 const authStore = useAuthStore()
@@ -118,7 +118,7 @@ const loginInfo = ref({
 
 const captchaUrl = ref('')
 const initCaptcha = throttle(() => {
-  captchaUrl.value = `${import.meta.env.VITE_AXIOS_BASE_URL}/auth/captcha?${Date.now()}`
+  captchaUrl.value = `${import.meta.env.VITE_AXIOS_BASE_URL}/auth/captcha?${Date.now()}&sid=${fetchId}`
 }, 500)
 
 const localLoginInfo = lStorage.get('loginInfo')

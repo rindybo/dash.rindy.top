@@ -4,10 +4,27 @@
  * @LastEditor: Ronnie Zhang
  * @LastEditTime: 2023/12/04 22:45:46
  * @Email: zclzone@outlook.com
- * Copyright © 2023 Ronnie Zhang(大脸怪) | https://isme.top
+ * Copyright © 2023 Rindy | rindy.top
  **********************************/
 
 import dayjs from 'dayjs'
+
+function guid() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
+    const r = Math.random() * 16 | 0
+    // eslint-disable-next-line eqeqeq
+    const v = c == 'x' ? r : (r & 0x3 | 0x8)
+    return v.toString(16)
+  })
+}
+
+let SEC_FETCH_ID = localStorage.getItem('__sec_fetch_id') || null
+if (SEC_FETCH_ID == null) {
+  SEC_FETCH_ID = guid().replaceAll('-', '')
+  localStorage.setItem('__sec_fetch_id', SEC_FETCH_ID)
+}
+
+export const fetchId = SEC_FETCH_ID
 
 /**
  * @param {(object | string | number)} time
